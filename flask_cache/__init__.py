@@ -201,7 +201,7 @@ class Cache(object):
 
     def add(self, *args, **kwargs):
         "Proxy function for internal cache object."
-        self.cache.add(*args, **kwargs)
+        return self.cache.add(*args, **kwargs)
 
     def delete(self, *args, **kwargs):
         "Proxy function for internal cache object."
